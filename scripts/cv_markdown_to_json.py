@@ -110,28 +110,6 @@ def extract_author_info(config):
         # Add social profiles
         profiles = []
         
-        # Academic profiles
-        if author.get('googlescholar'):
-            profiles.append({
-                "network": "Google Scholar",
-                "username": "",
-                "url": author.get('googlescholar')
-            })
-        
-        if author.get('orcid'):
-            profiles.append({
-                "network": "ORCID",
-                "username": "",
-                "url": author.get('orcid')
-            })
-        
-        if author.get('researchgate'):
-            profiles.append({
-                "network": "ResearchGate",
-                "username": "",
-                "url": author.get('researchgate')
-            })
-        
         # Social media profiles
         if author.get('github'):
             profiles.append({
