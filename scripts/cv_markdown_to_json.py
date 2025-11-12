@@ -15,7 +15,7 @@ import glob
 
 # Custom JSON encoder to handle date objects
 class DateTimeEncoder(json.JSONEncoder):
-    def default(self, obj):
+    def default(self, obj): # type: ignore
         if isinstance(obj, (datetime, date)):
             return obj.isoformat()
         return super().default(obj)
