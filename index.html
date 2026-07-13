@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samuel Adole — Senior Python / Django Engineer</title>
+
+<meta name="description" content="Senior full-stack engineer with six years building production Python/Django backends for healthcare and regulated SaaS. Leeds, UK. Open to contract and permanent roles.">
+<meta name="author" content="Samuel Adole">
+<link rel="canonical" href="https://samueladole.github.io/">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Samuel Adole — Senior Python / Django Engineer">
+<meta property="og:description" content="Six years building production Python/Django backends for healthcare and regulated SaaS. Leeds, UK.">
+<meta property="og:url" content="https://samueladole.github.io/">
+<meta property="og:image" content="https://github.com/samueladole.png?size=400">
+<meta name="twitter:card" content="summary">
+
+<meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c1117" media="(prefers-color-scheme: dark)">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232647c7'/><text x='16' y='22' font-family='ui-monospace,monospace' font-size='15' font-weight='700' fill='%23fff' text-anchor='middle'>SA</text></svg>">
+
+<link rel="stylesheet" href="assets/style.css">
+
+<!-- Prevents a flash of the wrong theme. Runs before first paint. -->
+<script>
+  (function () {
+    var saved = null;
+    try { saved = localStorage.getItem('theme'); } catch (e) {}
+    var dark = saved ? saved === 'dark'
+      : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Samuel Adole",
+  "jobTitle": "Senior Full-Stack Software Engineer",
+  "email": "mailto:adoleichasamuel@gmail.com",
+  "url": "https://samueladole.github.io/",
+  "image": "https://github.com/samueladole.png",
+  "address": { "@type": "PostalAddress", "addressLocality": "Leeds", "addressCountry": "UK" },
+  "sameAs": [
+    "https://github.com/samueladole",
+    "https://linkedin.com/in/samuel-adole"
+  ],
+  "knowsAbout": ["Python", "Django", "Django REST Framework", "FastAPI", "PostgreSQL", "TypeScript", "AWS", "Docker"]
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <nav class="topbar__inner" aria-label="Primary">
+    <a class="wordmark" href="#top">
+      <span class="wordmark__name">Samuel Adole</span>
+      <span class="wordmark__role">Python / Django</span>
+    </a>
+
+    <ul class="nav">
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">
+      <span class="theme-toggle__label">Dark</span>
+    </button>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ── Hero ─────────────────────────────────────────────── -->
+  <section id="top" class="hero">
+    <img class="avatar"
+         src="https://github.com/samueladole.png?size=400"
+         width="112" height="112"
+         alt="Samuel Adole"
+         fetchpriority="high">
+
+    <p class="status"><span class="status__dot" aria-hidden="true"></span>Available — contract or permanent</p>
+
+    <h1 class="hero__name">Samuel Adole</h1>
+
+    <p class="hero__role">
+      Senior Full-Stack Engineer
+      <span class="sep">/</span> Python &amp; Django
+      <span class="sep">/</span> Regulated &amp; Healthcare SaaS
+    </p>
+
+    <div class="hero__body">
+      <p>I build and own production backend systems — Django and DRF platforms, REST and WebSocket APIs, PostgreSQL schemas that have to stay correct. Six years of it, much of it in healthcare and other settings where data integrity, auditability and controlled releases aren't optional.</p>
+      <p>I've integrated with EMR and financial systems under compliance constraints, cut API latency by 30% on a high-concurrency platform, and kept the quality gates — automated tests, code review, structured logging — that regulated delivery depends on. Comfortable in React and TypeScript on the front end; strongest in Python, PostgreSQL, Docker and AWS. Currently finishing an MSc in Data Science at Leeds Beckett.</p>
+    </div>
+
+    <div class="actions">
+      <a class="btn btn--solid" href="#contact">Get in touch</a>
+      <a class="btn" href="https://github.com/samueladole" rel="me noopener">GitHub <span class="ext" aria-hidden="true">↗</span></a>
+      <a class="btn" href="https://linkedin.com/in/samuel-adole" rel="me noopener">LinkedIn <span class="ext" aria-hidden="true">↗</span></a>
+      <a class="btn" href="Samuel_Adole_CV.pdf">Download CV</a>
+    </div>
+
+    <p class="hero__meta">Leeds, UK — open to remote across the UK and EU</p>
+  </section>
+
+  <!-- ── Skills ───────────────────────────────────────────── -->
+  <section id="skills" class="section" aria-labelledby="skills-h">
+    <h2 id="skills-h" class="section__title">Stack</h2>
+
+    <dl class="stack">
+      <div class="stack__row">
+        <dt>Languages</dt>
+        <dd>Python <em>(expert)</em>, TypeScript / JavaScript <em>(expert)</em>, SQL, Node.js</dd>
+      </div>
+      <div class="stack__row">
+        <dt>Backend &amp; APIs</dt>
+        <dd>Django, Django REST Framework, FastAPI, Flask, NestJS, Express — REST, WebSockets, multi-tenant SaaS, OpenAPI</dd>
+      </div>
+      <div class="stack__row">
+        <dt>Databases</dt>
+        <dd>PostgreSQL <em>(primary)</em>, Redis, MongoDB — schema design, query optimisation, reconciliation, data integrity</dd>
+      </div>
+      <div class="stack__row">
+        <dt>Testing &amp; quality</dt>
+        <dd>PyTest, Jest, React Testing Library, TDD, code review, CI/CD quality gates (GitHub Actions), 80%+ coverage</dd>
+      </div>
+      <div class="stack__row">
+        <dt>Cloud &amp; infra</dt>
+        <dd>AWS (EC2, S3, Lambda, RDS), Docker &amp; Compose, Linux, Ansible, Vercel, Kubernetes / Helm <em>(familiar)</em></dd>
+      </div>
+      <div class="stack__row">
+        <dt>Security &amp; access</dt>
+        <dd>JWT, RBAC, secure REST APIs, audit trails, healthcare-compliance and data-consistency constraints</dd>
+      </div>
+      <div class="stack__row">
+        <dt>Frontend</dt>
+        <dd>React, Next.js, Redux Toolkit, TypeScript, D3.js — component-driven UI and real-time data visualisation</dd>
+      </div>
+      <div class="stack__row">
+        <dt>Data &amp; AI</dt>
+        <dd>LangChain, Pydantic AI, OpenAI API, PyTorch, TensorFlow, ETL pipelines</dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- ── Experience ───────────────────────────────────────── -->
+  <section id="experience" class="section" aria-labelledby="exp-h">
+    <h2 id="exp-h" class="section__title">Experience</h2>
+
+    <ol class="rail">
+
+      <li class="entry">
+        <p class="entry__when">Apr 2022 — Present</p>
+        <div class="entry__body">
+          <h3 class="entry__title">Senior Full-Stack Software Engineer</h3>
+          <p class="entry__org">Code &amp; Care <span class="dot">·</span> Remote</p>
+          <p class="entry__note">Software development and out-staffing company — embedded in client engineering teams.</p>
+
+          <article class="client">
+            <header class="client__head">
+              <h4 class="client__name">TOCA Social</h4>
+              <p class="client__when">Oct 2023 — Nov 2025 <span class="dot">·</span> London, UK</p>
+            </header>
+            <ul class="bullets">
+              <li>Designed and maintained public REST APIs and WebSocket services (Node.js / TypeScript) for real-time, multi-venue synchronisation across a distributed microservices architecture on AWS, under high-concurrency and low-latency requirements.</li>
+              <li>Owned <strong>TOCA Connects</strong>, the cross-studio data-synchronisation layer joining internal platform services to third-party venue-management systems — with the reconciliation and consistency guarantees enterprise integrations demand.</li>
+              <li>Cut backend API latency <strong>30%</strong> through profiling, query optimisation and caching; introduced structured logging and monitoring that shortened mean time to detection on production incidents.</li>
+              <li>Held test coverage above <strong>80%</strong> (Jest, React Testing Library) and embedded quality gates in CI/CD (GitHub Actions) to stop regressions reaching production.</li>
+            </ul>
+          </article>
+
+          <article class="client">
+            <header class="client__head">
+              <h4 class="client__name">FMG (Fulton Market Group)</h4>
+              <p class="client__when">Apr 2022 — Aug 2023 <span class="dot">·</span> Australia</p>
+            </header>
+            <ul class="bullets">
+              <li>Built high-throughput internal REST APIs in Python (Falcon) for a multi-tenant supply-chain SaaS platform, with strict validation, deliberate error handling and full OpenAPI documentation.</li>
+              <li>Delivered real-time operational dashboards (WebSocket-driven Python backends, D3.js / React) giving operations teams live visibility over <strong>20,000+</strong> shipment events a month.</li>
+              <li>Introduced structured logging, polling fallbacks and fault-tolerance patterns across distributed services, cutting on-call incidents significantly.</li>
+            </ul>
+          </article>
+        </div>
+      </li>
+
+      <li class="entry">
+        <p class="entry__when">Nov 2021 — Mar 2022</p>
+        <div class="entry__body">
+          <h3 class="entry__title">Full-Stack Software Engineer</h3>
+          <p class="entry__org">Intron Health <span class="dot">·</span> California, US (remote)</p>
+          <p class="entry__note">Healthcare technology — EMR integration under compliance constraints.</p>
+          <ul class="bullets">
+            <li>Built ETL pipelines feeding AI transcription output into downstream EMR systems via structured PostgreSQL schemas and secure REST APIs, meeting accuracy, consistency and audit-trail requirements under healthcare compliance.</li>
+            <li>Developed preprocessing and data-augmentation tooling for STT/ASR model training (PyTorch, TensorFlow), capturing <strong>300+</strong> accent profiles with measurable gains in accuracy and pipeline repeatability.</li>
+            <li>Wrote integration specs covering data flow, failure modes and rollback behaviour — a reliable reference for asynchronous review across time zones.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="entry">
+        <p class="entry__when">Aug 2021 — Dec 2021</p>
+        <div class="entry__body">
+          <h3 class="entry__title">Full-Stack Software Engineer</h3>
+          <p class="entry__org">Amenta Media AB (Likvio) <span class="dot">·</span> Gothenburg, Sweden (remote)</p>
+          <p class="entry__note">Fintech SaaS — Django / FastAPI platform build.</p>
+          <ul class="bullets">
+            <li>Built Likvio's backend from scratch with FastAPI and Django REST Framework, integrating the Fortnox financial API to automate contract lifecycle and invoice synchronisation — with error handling, retry logic and reconciliation throughout.</li>
+            <li>Ran high-volume background processing (Celery, PostgreSQL) at <strong>100%</strong> data integrity across concurrent financial-exchange operations.</li>
+            <li>Authored the full Swagger/OpenAPI reference — endpoints, authentication flows, error schemas — so external developers could self-serve the integration.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="entry">
+        <p class="entry__when">Jan 2021 — Apr 2021</p>
+        <div class="entry__body">
+          <h3 class="entry__title">Software Engineer</h3>
+          <p class="entry__org">V3C Technologies <span class="dot">·</span> Abuja, Nigeria</p>
+          <p class="entry__note">Multi-role education platform.</p>
+          <ul class="bullets">
+            <li>Designed Flask REST APIs with JWT authentication and role-based access control across teacher, parent and student portals — the same access model enterprise SaaS user provisioning runs on.</li>
+            <li>Standardised API lifecycle documentation (Swagger/OpenAPI) and made architectural improvements that cut developer integration time by <strong>30%</strong>.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="entry">
+        <p class="entry__when">Dec 2019 — Jan 2021</p>
+        <div class="entry__body">
+          <h3 class="entry__title">Full-Stack Python Developer</h3>
+          <p class="entry__org">eHealth4everyone <span class="dot">·</span> Abuja, Nigeria</p>
+          <p class="entry__note">Health-data / DHIS2 platform — regulated public-health domain.</p>
+          <ul class="bullets">
+            <li>Built and ran a DHIS2 hosting platform (Django, Ansible), automating server provisioning and configuration management — infrastructure-as-code in a public-health data context.</li>
+            <li>Designed and deployed high-availability data APIs (Django REST Framework, Redis, AWS EC2/RDS) for the HealthThink dataset; Redis caching and auto-scaling lifted throughput <strong>40%</strong>.</li>
+          </ul>
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+  <!-- ── Projects ─────────────────────────────────────────── -->
+  <section id="projects" class="section" aria-labelledby="proj-h">
+    <h2 id="proj-h" class="section__title">Selected projects</h2>
+
+    <ul class="cards">
+      <li class="card">
+        <p class="card__when">2026 — in progress</p>
+        <h3 class="card__title">
+          <a href="https://github.com/samueladole/MDATS79" rel="noopener">RAGScope</a>
+        </h3>
+        <p class="card__desc">Observability platform for RAG pipelines: trace collection, an evaluation engine, and a dashboard for inspecting retrieval and generation quality run by run. Containerised with Docker Compose across ChromaDB, Ollama and a Marimo/Streamlit front end. MSc dissertation project.</p>
+        <p class="tags"><span>Python</span><span>LangChain</span><span>ChromaDB</span><span>Docker Compose</span><span>OpenTelemetry</span></p>
+      </li>
+
+      <li class="card">
+        <p class="card__when">2025</p>
+        <h3 class="card__title">
+          <a href="https://github.com/samueladole/COMP738" rel="noopener">Causal inference on UK road-traffic accident severity</a>
+        </h3>
+        <p class="card__desc">Predictive modelling and causal analysis on the STATS19 road-safety dataset — Random Forest for prediction, DoWhy and EconML for treatment-effect estimation, separating what predicts severity from what actually drives it.</p>
+        <p class="tags"><span>Python</span><span>scikit-learn</span><span>DoWhy</span><span>EconML</span><span>pandas</span></p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ── Education ────────────────────────────────────────── -->
+  <section id="education" class="section" aria-labelledby="edu-h">
+    <h2 id="edu-h" class="section__title">Education &amp; certification</h2>
+
+    <ol class="rail">
+      <li class="entry">
+        <p class="entry__when">Sep 2025 — Sep 2026</p>
+        <div class="entry__body">
+          <h3 class="entry__title">MSc Data Science <span class="badge">in progress</span></h3>
+          <p class="entry__org">Leeds Beckett University, UK</p>
+          <p class="entry__note">Machine learning, statistical modelling, NLP and algorithmic complexity, applied to real-world data engineering and AI systems.</p>
+        </div>
+      </li>
+
+      <li class="entry">
+        <p class="entry__when">Sep 2014 — Sep 2018</p>
+        <div class="entry__body">
+          <h3 class="entry__title">BSc Computer Science</h3>
+          <p class="entry__org">Bingham University Karu, Nigeria</p>
+        </div>
+      </li>
+
+      <li class="entry">
+        <p class="entry__when">Certification</p>
+        <div class="entry__body">
+          <h3 class="entry__title">AWS Machine Learning Foundations</h3>
+          <p class="entry__org">Amazon Web Services</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ── Contact ──────────────────────────────────────────── -->
+  <section id="contact" class="section section--contact" aria-labelledby="contact-h">
+    <h2 id="contact-h" class="section__title">Contact</h2>
+
+    <p class="contact__lead">Open to senior Python/Django contract and permanent roles — UK-based or remote. The fastest way to reach me is email.</p>
+
+    <dl class="contact">
+      <div class="contact__row">
+        <dt>Email</dt>
+        <dd><a href="mailto:adoleichasamuel@gmail.com">adoleichasamuel@gmail.com</a></dd>
+      </div>
+      <div class="contact__row">
+        <dt>LinkedIn</dt>
+        <dd><a href="https://linkedin.com/in/samuel-adole" rel="me noopener">linkedin.com/in/samuel-adole</a></dd>
+      </div>
+      <div class="contact__row">
+        <dt>GitHub</dt>
+        <dd><a href="https://github.com/samueladole" rel="me noopener">github.com/samueladole</a></dd>
+      </div>
+      <div class="contact__row">
+        <dt>Location</dt>
+        <dd>Leeds, UK — open to remote</dd>
+      </div>
+    </dl>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer__copy">© <span id="year">2026</span> Samuel Adole</p>
+  <p class="footer__links">
+    <a href="mailto:adoleichasamuel@gmail.com">Email</a>
+    <a href="https://linkedin.com/in/samuel-adole" rel="me noopener">LinkedIn</a>
+    <a href="https://github.com/samueladole" rel="me noopener">GitHub</a>
+  </p>
+</footer>
+
+<script src="assets/theme.js" defer></script>
+</body>
+</html>
