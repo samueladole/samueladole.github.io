@@ -348,6 +348,40 @@ em { font-style: normal; color: var(--ink-mute); }
 }
 .stack dd { margin: 0; font-size: var(--step-0); }
 
+/* --- Achievements ------------------------------------------- */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.stat {
+  padding: 1.25rem 1.3rem;
+  background: var(--surface);
+  border: var(--rail) solid var(--line);
+  border-radius: var(--radius);
+  border-top: 2px solid var(--brand);
+}
+.stat__figure {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum" 1;
+  font-size: var(--step-2);
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: var(--track-tight);
+}
+.stat__label {
+  margin-top: .6rem;
+  font-size: var(--step--1);
+  color: var(--ink-body);
+  line-height: 1.5;
+}
+
+@media (max-width: 46rem) {
+  .stats { grid-template-columns: 1fr; }
+}
+
 /* --- Timeline rail ------------------------------------------ */
 
 .rail { display: grid; gap: 2.6rem; }
@@ -467,7 +501,21 @@ em { font-style: normal; color: var(--ink-mute); }
 .card__title a { color: var(--ink); text-decoration: none; }
 .card__title a:hover { color: var(--brand); text-decoration: underline; }
 .card__ctx { color: var(--ink-mute); font-weight: 450; font-size: var(--step-0); }
+.card__ctx--block { display: block; margin-top: .3rem; font-size: var(--step--1); }
 .card__desc { margin-top: .6rem; font-size: var(--step-0); }
+.card__desc + .card__desc { margin-top: .75rem; }
+
+/* Featured project — a little more presence for the headline work. */
+.card--feature { border-left: 2px solid var(--brand); }
+
+.card__desc code {
+  font-family: var(--font-mono);
+  font-size: .88em;
+  padding: .05em .35em;
+  background: var(--bg);
+  border: var(--rail) solid var(--line);
+  border-radius: var(--radius-sm);
+}
 
 .tags {
   display: flex;
